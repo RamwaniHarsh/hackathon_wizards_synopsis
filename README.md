@@ -1,1 +1,1 @@
-"# hackathon_wizards_synopsis" 
+hackathon_wizards_synopsis
