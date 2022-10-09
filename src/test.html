@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadhaar Number Validation</title>
+</head>
+
+<body>
+  <input type="text" id="txtAadhar" onblur="AadharValidate();" />
+  <script type="text/javascript">
+    function AadharValidate() {
+      var aadhar = document.getElementById("txtAadhar").value;
+      var adharcardTwelveDigit = /^\d{12}$/;
+      if (aadhar != '') {
+        if (aadhar.match(adharcardTwelveDigit)) {
+            alert("You entered Coorect Aadhar Number");
+            return true;
+        }
+        else {
+          alert("Enter valid Aadhar Number");
+          return false;
+        }
+      }
+    }
+  </script>
+</body>
+
+
+
+
+
+
+</html>

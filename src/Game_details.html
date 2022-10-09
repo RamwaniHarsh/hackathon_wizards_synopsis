@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Rules</title>
+    <link rel="stylesheet" href="../home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+<!--navbar-->
+<div class="navbar navbar-expand-sm bg-dark ">
+    <div class="container-fluid">
+        <i class="bi bi-list" id="bars" data-bs-target="#menu" data-bs-toggle="offcanvas"></i>
+
+        <p style="font-size:25px; color:white; position: relative; top: 9px;">
+            <span style="color:#ff6131;">Khel</span> <span style="color:white;">Maha</span> <span
+                style="color:green;">kumbh</span>
+        </p>
+
+        <a href="" class="navbar-brand" id="logo" style="margin-left:300px;"></a>
+        <!--        dropdown btn-->
+        <div class="dropdown" id="drop_btn">
+            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+               aria-expanded="false">
+                Other
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="Institute_registration.html"><span class="d-item">Institute Registration</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="d-item">State Level Games</span> </a></li>
+                <li><a class="dropdown-item" href="#"><span class="d-item">Zone Level Games </span></a></li>
+            </ul>
+        </div>
+        <i class="bi bi-box-arrow-in-left" id="sign"></i>
+    </div>
+</div>
+
+<!--offcanvas-->
+<div id="menu" class="offcanvas offcanvas-start bg-dark text-light d-flex flex-column text-center ">
+
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Menu</h1>
+        <button class="btn-close text-reset bg-light" type="button" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav menu-list">
+            <li class="nav-item"><a href="/harsh2/hackathon_synopsis/home.html" class="nav-link text-light menu-link">Home</a></li>
+            <li class="nav-item"><a href="Game_details.html" class="nav-link text-light menu-link " >Games</a></li>
+
+            <li class="nav-item"><a href="Events.html" class="nav-link text-light menu-link">Events</a></li>
+
+            <li class="nav-item"><a href="individual_registration.php" class="nav-link text-light menu-link">Registration</a></li>
+            <li class="nav-item"><a href="Game_details.html" class="nav-link text-light menu-link">Resources</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link text-light menu-link">Blog</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link text-light menu-link">Login</a></li>
+
+        </ul>
+    </div>
+    <div class="offcanvas-footer">
+        <i class="bi bi-telephone-inbound" id="call"></i>  <h4 class="text-primary">Call us on: +91-7990122530</h4>
+    </div>
+</div>
+
+<!--badminton-->
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;" id="badminton">Badminton</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        The Laws of Badminton <br>
+        The Laws of Badminton and Competition Regulations in the BWF Statutes provide the detail on every aspect of
+        the game of badminton.<br>
+
+        Below is a brief overview - simplified rules.<br>
+
+        Scoring System<br>
+
+        A match consists of the best of 3 games of 21 points.<br>
+        Every time there is a serve - there is a point scored.<br>
+        The side winning a rally adds a point to its score.<br>
+        At 20 all, the side which gains a 2 point lead first, wins that game.<br>
+        At 29 all, the side scoring the 30th point, wins that game.<br>
+        The side winning a game serves first in the next game.<br>
+        Interval and Change of Ends
+        When the leading score reaches 11 points, players have a 60 second interval.<br>
+        A 2 minute interval between each game is allowed.<br>
+        In the third game, players change ends when the leading score reaches 11 points.<br>
+        Singles
+        At the beginning of the game (0-0) and when the server's score is even, the server serves from the right
+        service court. When the server's score is odd, the server serves from the left service court.<br>
+        If the server wins a rally, the server scores a point and then serves again from the alternate service
+        court.<br>
+        If the receiver wins a rally, the receiver scores a point and becomes the new server. They serve from the
+        appropriate service court - left if their score is odd, and right if it is even.<br>
+
+        Doubles
+        A side has only one 'set'.<br>
+        The service passes consecutively to the players as shown in the diagram.<br>
+        At the beginning of the game and when the score is even, the server serves from the right service court.
+        When it is odd, the server serves from the left court.<br>
+        If the serving side wins a rally, the serving side scores a point and the same server serves again from the
+        alternate service court.<br>
+        If the receiving side wins a rally, the receiving side scores a point. The receiving side becomes the new
+        serving side.<br>
+        The players do not change their respective service courts until they win a point when their side is serving.
+        If players commit an error in the service court, the error is corrected when the mistake is discovered.<br>
+
+        In a doubles match between A & B against C & D. A & B won the toss and decided to serve. A to serve to C. A
+        shall be the initial server while C shall be the initial receiver.<br>
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="individual_registration.php"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                  1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                      <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Badminton</b></span> <br>
+
+
+                    Game Type: Players can apply either singles or doubles. <br>
+                    Equipment: Badminton Racket, Shuttlecock, Badminton Shoes. <br>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--basketball-->
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;" id="basketball">Basketball</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        On 15 January 1892, James Naismith published his rules for the game of "Basket Ball" that he invented:[1]
+        The original game played under these rules was quite different from the one played today as there was no
+        dribbling, dunking, three-pointers, or shot clock, and goal tending was legal.<br>
+
+        The ball may be thrown in any direction with one or both hands.<br>
+        The ball may be batted in any direction with one or both hands (never with fist).<br>
+        A player cannot run with the ball, the player must throw it from the spot on which he catches it, allowance
+        to be made for a man who catches the ball when running at a good speed.<br>
+        The ball must be held in or between the hands; the arms or body must not be used for holding it.<br>
+        No shouldering, holding, pushing, tripping or striking in any way the person of an opponent shall be
+        allowed.<br> The first infringement of this rule by any person shall count as a foul; the second shall
+        disqualify him until the next goal is made or, if there was evident intent to injure the person, for the
+        whole of the game.<br> No substitute allowed.<br>
+        A foul is striking at the ball with the fist, violation of rules 3 and 4, and such described in rule 5.<br>
+        If either side makes three consecutive fouls, it shall count a goal for the opponents (consecutive means
+        without the opponents in the meantime making a foul).<br>
+        A goal shall be made when the ball is thrown or batted from the grounds into the basket and stays there
+        (without falling), providing those defending the goal do not touch or disturb the goal.<br> If the ball rests on
+        the edge, and the opponent moves the basket, it shall count as a goal.<br>
+        When the ball goes out of bounds it shall be thrown into the field and played by the first person touching
+        it.<br> In case of dispute the umpire shall throw it straight into the field.<br> The thrower in is allowed five
+        seconds, if he holds it longer, it shall go to the opponent.<br> If any side persists in delaying the game, the
+        umpire shall call a foul on them.<br>
+        The umpire shall be the judge of the men and shall note the fouls, and notify the referee when three
+        consecutive fouls have been made.<br> He shall have power to disqualify people according to Rule 5.<br>
+        The referee shall be judge of the ball and shall decide when the ball is in play, in bounds, to which side
+        it belongs, and shall keep the time.<br> He shall decide when a goal has been made and keep account of the goals
+        with any other duties that are usually performed by a referee.<br>
+        The time shall be two fifteen minute halves, with five minutes rest between.<br>
+        The side making the most goals in that time is declared the winner.<br> In case of a drew game may, by agreement
+        of the captain, by continued until another goal is made.<br>
+        Naismith's original 1892 manuscript of the rules of basketball, one of the most expensive manuscripts in
+        existence, is publicly displayed at Allen Fieldhouse on the campus of the University of Kansas.<br> Naismith was
+        the first coach in the history of Kansas Jayhawks men's basketball.<br>
+
+        Players, substitutes, teams and teammates
+        Naismith's original rules did not specify how many players were to be on the court.<br> In 1900, five players
+        became standard, and players that were substituted were not allowed to re-enter the game.<br>[citation needed]
+        Players were allowed to re-enter a game once from 1921, and twice from 1934; such restrictions on
+        substitutions were abolished in 1945 when substitutions became unlimited.<br> Coaching was originally prohibited
+        during the game, but from 1949, coaches were allowed to address players during a time-out.<br>
+
+        Originally a player was disqualified on his second foul.<br> This limit became four fouls in 1911 and five fouls
+        in 1945, still the case in most forms of basketball where the normal length of the game (before any overtime
+        periods) is 40 minutes.<br> When the normal length is 48 minutes (this is the case with the National Basketball
+        Association in the United States and Canada) a player is accordingly disqualified on his sixth foul.<br>
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                    1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                    <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Basketball</b></span> <br>
+
+
+                    Game Type: A team of 7 players with 6 regular and 1 substitute player. <br>
+                    Equipment: Basketball Sneakers(shoes), Mouth Guard, Athletic Shorts, Knee, and Elbow Pads, Protective Goggles,
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--cycling-->
+
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;">Cycling</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        Road Cycling Rules And Regulations
+        Cycling - Road is a breathtaking sport which attracts many spectators.<br> Let's look into the rules and
+        regulations set for this Olympic discipline:
+        Bikes used during the race, can be made up of aluminum, steel, carbon fiber or titanium.<br> These bikes are
+        usually 8-10kg in weight.<br> The riders are not allowed to make changes to the traditional bicycle design in
+        order to enhance its aerodynamics during the road races, except for the aerodynamic handlebars that are
+        allowed in the time trial.<br>
+        The national teams are positioned on the start line based with their world rankings, at the commencement of
+        the road race.<br>
+        Helmets are mandatory for all the riders in both cycling events.<br>
+        Refreshment stations are positioned around the course, offering food and drink to the athletes.<br>
+        The riders belonging to the same nationality can pass food and drink to each other from the stations during
+        the race.<br>
+        It is an offence if a competitor pushes another along the course.<br> In such a case the offender will be
+        disqualified.<br>
+        The riders are permitted to receive assistance in case of puncture and mechanical repairs from official
+        vehicles which pursue the race, or from the pits stationed along the course.<br> Even the riders from the same
+        nation can help each other in repair by offering repair tools.<br>
+        The act of drafting, that is riding in the slipstream of the bicycle in front is permitted in the road race,
+        but it is banned in the time trial.<br>
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                    1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                    <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Cycling</b></span> <br>
+
+
+                    Game Type: 1v1. <br>
+                    Equipment: Bicycle or Bike, Bib Shorts, Base Layer Suit, Jersey, Gloves, Cycling Shoes, Helmet, Glasses.
+
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    hockey-->
+    <section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+        <h1 style="text-align: center;" id="hockey">Hockey</h1><br><br>
+
+        <p style="text-align: justify; font-size: large;">
+            The basic field hockey rules. <br>
+            Hockey players can only hit the ball with the flat side of their stick.<br>
+            Hockey players (other than the goalkeeper) are not allowed to use their feet, or any other parts of the
+            body, to
+            control the ball at any time.<br>
+            A goal can only be scored either from a field goal, a penalty corner, or from a penalty stroke. A field goal
+            is
+            a goal scored from open play, and can only be scored from inside the 'striking circle', in front of the
+            opponent's goal. If the hockey ball is hit from outside the circle and goes into the goal, it does not count
+            as
+            a goal.<br>
+            Hockey players may not trip, push, charge, interfere with, or physically handle an opponent in any way.
+            Hockey
+            is a non-contact sport and all fouls result in a free hit or a 'penalty corner' for the non-offending team
+            depending on where the infringement took place and the severity of the foul.<br>
+            Types of foul in field hockey
+            A number of different types of foul may be punished in a game of hockey. Some of the basic ones to watch out
+            for
+            include.<br>
+
+            Obstruction. This is awarded against a hockey player who uses their body or stick to prevent an opponent
+            from
+            reaching the ball.<br>
+            Third-party obstruction. This is awarded when a hockey player positions themselves between the ball and an
+            opponent, allowing a team-mate an unobstructed play on the ball.<br>
+            Advancing. This is awarded against a player who shoves, pushes, or advances the ball in any way, using any
+            part
+            of their body.<br>
+            Backsticks. This is awarded against a player who strikes the ball with the rounded back of the hockey stick.
+            Hockey stick interference. This is awarded against a player who uses their stick to hit an opponent's stick,
+            either intentionally or unintentionally.<br>
+            Undercutting. This is awarded against a player who lifts the ball in a dangerous manner.<br>
+            Sticks. This is awarded against a player who raises their stick dangerously near another player.<br>
+            Types of punishment in field hockey
+            Fouls in a hockey match can be punished in three main ways. These are as follows:<br>
+
+            Free hit. This is a free play awarded on any offenses that occurs outside of the scoring circle. It usually
+            takes place at the location of the violation. All opposing players must stand at least 5 yards (4.6m) from
+            where
+            the hit is to be taken.<br>
+            Penalty corner. This is awarded to the attacking team when the defense either commits a foul inside the
+            striking
+            circle or intentionally hits the ball out-of-bounds over the end line. A penalty corner is taken by an
+            attacking
+            player at a spot on the end-line 10 yards (9.2m) away from the nearest goal post. All other attackers must
+            stand
+            outside the striking circle, while five defenders, including the goalkeeper, stand behind the end line until
+            contact is made with the ball. Once the ball has been put in play, all players can rush into the circle to
+            either defend or shoot the ball at the goal.<br>
+            Penalty stroke. This is awarded to the attacking side when an offense is committed by the defending side
+            which
+            is deemed to have prevented an almost certain goal. A penalty is taken 7 yards (6.4m) from goal, with the
+            player
+            having only the goalkeeper to beat.<br>
+            Field hockey umpires
+            There are two umpires on the hockey field, who are usually responsible for each half of the pitch. A player
+            who
+            breaches the rules, either by rough or dangerous play, misconduct, or an intentional offenses, can be shown
+            a
+            card — either green, yellow or red.<br>
+
+            Green. This is an official warning given to the hockey player to not break the rules.<br>
+            Yellow. This results in a hockey player being sent off the pitch for 5 minutes, following an offense.<br>
+            Red. A red card results in an early shower and is given for more serious offense.
+        </p>
+        <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+            <a href="individual_registration.php"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+        </button>
+        <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+            <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+        </button>
+        <!--    modal-->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Nationality: Indian <br>
+                        State: Gujarat <br>
+                        If out of Gujarat: <br>
+                        1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                        2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                        Age: 9 - 60. <br>
+                        Medical: Player must not have a severe medical condition. <br><br>
+                        <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Hockey</b></span> <br>
+
+
+                        Game Type: A team of 12 players with 9 regular and 3 substitute players. <br>
+                        Equipment: Running Shoes.
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+<!--kho-kho-->
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;" id="kho-kho">Kho-Kho</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        The game comprises two teams with 12 players each (as per the rules of the Asian Kho - Kho Federation 15
+        players each) in the team while only 9 players actually playing. <br>
+        The match comprises 4 turns consisting of two defence and two chase turns.<br>
+        Don't violate the above two rules.<br>
+        Every put-out defender brings one point to the chasing team.<br>
+        The high scoring team is declared as the winner.<br>
+        The game consists of defence as well as tracking skills.<br>
+        Defence: Single chain, double chain, ring game, dodging, line, advance, avoid and defence faking
+        Chasing: running dives, pole dives, deceiving (judgement) Kho on the pole, delayed Kho, moving into cross
+        lanes, rush kho, sitting fake, 3rd rush, covering (skating), pole turn, skit kho, chain kho, etc.
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                    1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                    <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Kho-Kho</b></span> <br>
+
+
+                    Game Type: A team of 16 players with 11 regular and 5 substitute players. <br>
+                    Equipment: Helmet, Skates, Shoulder pads, elbow pads, knee and shin pads, Gloves, Neck protector, Mouthguard.
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    Running-->
+    <section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+        <h1 style="text-align: center;" id="running">Running</h1><br><br>
+
+        <p style="text-align: justify; font-size: large;">
+            The runners should abide by the following rules in order to complete a race -
+
+            Sprinters should run in designated lanes and cannot cross lanes, throughout the race.<br>
+
+            In races with bunched starts, athletes can break inside.<br> In 800-meter race, they start from staggered
+            positions and can break inside after the first bend.<br>
+
+            In longer races of 1500 meters, 5000 meters, and 10000 meters, athletes can break inside after the start.<br>
+
+            Sprinters shouldn't step on white lines that mark their lanes throughout the race.<br>
+
+            Sensors are placed in the starting pistol and at the blocks.<br> In case of a false start, the athlete is
+            disqualified.<br>
+
+            Before giving the 'set' command or before firing the starter gun, athletes cannot touch the other side of
+            the start line with their hands or feet.<br>
+
+            Athletes should not obstruct other athletes during the race.<br>
+
+            If an athlete is obstructed, the referee may order the race to be held again, or he may ask the athlete to
+            take part in the next round.<br>
+
+            Athletes may leave the track voluntarily before the race ends, but they cannot come back to the track else
+            they will be disqualified.<br>
+        </p>
+        <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+            <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+        </button>
+        <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+            <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal5" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+        </button>
+        <!--    modal-->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Nationality: Indian <br>
+                        State: Gujarat <br>
+                        If out of Gujarat: <br>
+                        1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                        2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                        Age: 9 - 60. <br>
+                        Medical: Player must not have a severe medical condition. <br><br>
+                        <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Running</b></span> <br>
+                        Game Type: 1v1. <br>
+                        Equipment: Running Shoes.
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--volleyball-->
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;" id="volleyball">Volleyball</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        The court dimensions
+
+        A volleyball court is 9 m × 18 m (29.5 ft × 59.1 ft), divided into equal square halves by a net with a width
+        of one meter (39.4 in).[18]<br> The top of the net is 2.43 m (7 ft 11+11⁄16 in) above the center of the court
+        for men's competition, and 2.24 m (7 ft 4+3⁄16 in) for women's competition, varied for veterans and junior
+        competitions.[3]<br>
+
+        The minimum height clearance for indoor volleyball courts is 7 m (23.0 ft), although a clearance of 8 m
+        (26.2 ft) is recommended.[18]<br>
+
+        A line 3 m (9.8 ft) from and parallel to the net is considered the "attack line". This "3 meter" (or
+        "10-foot") line divides the court into "back row" and "front row" areas (also back court and front
+        court).[18]<br> These are in turn divided into 3 areas each: these are numbered as follows, starting from area
+        "1", which is the position of the serving player:
+
+        After a team gains the serve (also known as siding out), its members must rotate in a clockwise direction,
+        with the player previously in area "2" moving to area "1" and so on, with the player from area "1" moving to
+        area "6".[3]<br> Each player rotates only one time after the team gains possession of the service; the next time
+        each player rotates will be after the other team wins possession of the ball and loses the point.[18]<br>
+
+        The team courts are surrounded by an area called the free zone which is a minimum of 3 meters wide and which
+        the players may enter and play within after the service of the ball.[19]<br> All lines denoting the boundaries
+        of the team court and the attack zone are drawn or painted within the dimensions of the area and are
+        therefore a part of the court or zone. If a ball comes in contact with the line, the ball is considered to
+        be "in". An antenna is placed on each side of the net perpendicular to the sideline and is a vertical
+        extension of the side boundary of the court. A ball passing over the net must pass completely between the
+        antennae (or their theoretical extensions to the ceiling) without contacting them.[3]<br>
+
+        The ball:
+        Main article: Volleyball (ball)
+        FIVB regulations state that the ball must be spherical, made of leather or synthetic leather, have a
+        circumference of 65–67 cm (26–26 in), a weight of 260–280 g (9.2–9.9 oz) and an interior air pressure of
+        0.30–0.325 kg/cm2 (4.26 to 4.61 psi)(294.3 to 318.82 mbar or hPa).[20]<br> Other governing bodies have similar
+        regulations.
+
+        Gameplay:
+        Each team consists of six players.[18]<br> To get play started, a team is chosen to serve by coin toss. A player
+        from the serving team throws the ball into the air and attempts to hit the ball so it passes over the net on
+        a course such that it will land in the opposing team's court (the serve).[18]<br> The opposing team must use a
+        combination of no more than three contacts with the volleyball to return the ball to the opponent's side of
+        the net.[18]<br> These contacts usually consist first of the bump or pass so that the ball's trajectory is aimed
+        towards the player designated as the setter; second of the set (usually an over-hand pass using wrists to
+        push finger-tips at the ball) by the setter so that the ball's trajectory is aimed towards a spot where one
+        of the players designated as an attacker can hit it, and third by the attacker who spikes (jumping, raising
+        one arm above the head and hitting the ball so it will move quickly down to the ground on the opponent's
+        court) to return the ball over the net.[3]<br> The team with possession of the ball that is trying to attack the
+        ball as described is said to be on offence.
+
+        The team on defence attempts to prevent the attacker from directing the ball into their court: players at
+        the net jump and reach above the top (and if possible, across the plane) of the net to block the attacked
+        ball.[3]<br> If the ball is hit around, above, or through the block, the defensive players arranged in the rest
+        of the court attempt to control the ball with a dig (usually a fore-arm pass of a hard-driven ball). After a
+        successful dig, the team transitions to offence.
+
+        The game continues in this manner, rallying back and forth until the ball touches the court within the
+        boundaries or until an error is made.[18]<br> The most frequent errors that are made are either to fail to
+        return the ball over the net within the allowed three touches, or to cause the ball to land outside the
+        court.[18]<br> A ball is "in" if any part of it touches the inside of a team's court or a sideline or end-line,
+        and a strong spike may compress the ball enough when it lands that a ball which at first appears to be going
+        out may actually be in. Players may travel well outside the court to play a ball that has gone over a
+        sideline or end-line in the air.
+
+        Other common errors include a player touching the ball twice in succession, a player "catching" the ball, a
+        player touching the net while attempting to play the ball, or a player penetrating under the net into the
+        opponent's court. There are a large number of other errors specified in the rules, although most of them are
+        infrequent occurrences. These errors include back-row or libero players spiking the ball or blocking
+        (back-row players may spike the ball if they jump from behind the attack line), players not being in the
+        correct position when the ball is served, attacking the serve in the frontcourt and above the height of the
+        net, using another player as a source of support to reach the ball, stepping over the back boundary line
+        when serving, taking more than 8 seconds to serve,[21]<br> or playing the ball when it is above the opponent's
+        court.
+
+        Scoring:
+        A point is scored when the ball contacts the floor within the court boundaries or when an error is made:
+        when the ball strikes one team's side of the court, the other team gains a point; and when an error is made,
+        the team that did not make the error is awarded a point, in either case paying no regard to whether they
+        served the ball or not. If any part of the ball hits the line, the ball is counted as in the court. The team
+        that won the point serves for the next point. If the team that won the point served in the previous point,
+        the same player serves again. If the team that won the point did not serve the previous point, the players
+        of the team acquiring the serve rotate their position on the court in a clockwise manner. The game
+        continues, with the first team to score 25 points by a two-point margin awarded the set. Matches are
+        best-of-five sets and the fifth set, if necessary, is usually played to 15 points. (Scoring differs between
+        leagues, tournaments, and levels; high schools sometimes play best-of-three to 25; in the NCAA matches are
+        played best-of-five to 25 as of the 2008 season.)[22]<br>
+
+        Before 1999, points could be scored only when a team had the serve (side-out scoring) and all sets went up
+        to only 15 points. The FIVB changed the rules in 1999 (with the changes being compulsory in 2000) to use the
+        current scoring system (formerly known as rally point system), primarily to make the length of the match
+        more predictable and to make the game more spectator- and television-friendly.
+
+        The final year of side-out scoring at the NCAA Division I Women's Volleyball Championship was 2000. Rally
+        point scoring debuted in 2001,[23]<br> and games were played to 30 points through 2007. For the 2008 season,
+        games were renamed "sets" and reduced to 25 points to win. Most high schools in the U.S. changed to rally
+        scoring in 2003,[24]<br>[25]<br>[26]<br> and several states implemented it the previous year on an experimental
+        basis.[27]<br>
+
+        Libero
+        The libero player was introduced internationally in 1998,[28]<br> and made its debut for NCAA competition in
+        2002.[29]<br> The libero is a player specialized in defensive skills: the libero must wear a contrasting jersey
+        color from their teammates and cannot block or attack the ball when it is entirely above net height. When
+        the ball is not in play, the libero can replace any back-row player, without prior notice to the officials.
+        This replacement does not count against the substitution limit each team is allowed per set, although the
+        libero may be replaced only by the player whom he or she replaced. Most U.S. high schools added the libero
+        position from 2003 to 2005.[25]<br>[30]<br>
+
+        The modern-day libero often takes on the role of a second setter. When the setter digs the ball, the libero
+        is typically responsible for the second ball and sets to the front row attacker. The libero may function as
+        a setter only under certain restrictions. To make an overhand set, the libero must be standing behind (and
+        not stepping on) the 3-meter line; otherwise, the ball cannot be attacked above the net in front of the
+        3-meter line. An underhand pass is allowed from any part of the court.
+
+        The libero is, generally, the most skilled defensive player on the team. There is also a libero tracking
+        sheet, where the referees or officiating team must keep track of whom the libero subs in and out for. Under
+        FIVB (Federation Internationale de Volleyball) rules, two liberos are designated at the beginning of the
+        play, only one of whom can be on the court at any time.
+
+        Furthermore, a libero is not allowed to serve, according to international rules. NCAA rules for both men and
+        women differ on this point; a 2004 rule change allows the libero to serve, but only in a specific rotation.
+        That is, the libero can only serve for one person, not for all of the people for whom he or she goes in.
+        That rule change was also applied to high school and junior high play soon after.
+
+        Recent rule changes
+        Other rule changes enacted in 2000 include allowing serves in which the ball touches the net, as long as it
+        goes over the net into the opponents' court. Also, the service area was expanded to allow players to serve
+        from anywhere behind the end line but still within the theoretical extension of the sidelines. Other changes
+        were made to lighten up calls on faults for carries and double-touches, such as allowing multiple contacts
+        by a single player ("double-hits") on a team's first contact provided that they are a part of a single play
+        on the ball.
+
+        In 2008, the NCAA changed the minimum number of points needed to win any of the first four sets from 30 to
+        25 for women's volleyball (men's volleyball remained at 30 for another three years, switching to 25 in
+        2011). If a fifth (deciding) set is reached, the minimum required score remains at 15. In addition, the word
+        "game" is now referred to as "set".[22]<br>
+
+        The Official Volleyball Rules are prepared and updated every few years by the FIVB's Rules of the Game and
+        Refereeing Commission.[31]<br> The latest edition is usually available on the FIVB's website.[2]<br>
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal6" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                    1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                    <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>volleyball</b></span> <br>
+
+
+                    Game Type: A team of 8 players with 6 regular and 2 substitute players. <br>
+                    Equipment: Shorts, t-shirts, shoes, braces, sleeves, and pads.
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--weight-lifting-->
+<section style="margin: 50px 100px; border: 0.5px solid gray; padding: 50px 100px; border-radius: 20px;">
+    <h1 style="text-align: center;" id="weight-lifting">Weight Lifting</h1><br><br>
+
+    <p style="text-align: justify; font-size: large;">
+        Rules and scoring in weightlifting
+        There are two stages in modern Olympic weightlifting – the ‘snatch’ and the ‘clean and jerk’.<br>
+
+        The snatch is where the weightlifter picks up the barbell and lifts it above his head in one singular
+        motion.<br>
+
+        In the clean and jerk, the weightlifter is first required to pick up the barbell and bring it up to his
+        chest (clean).<br> The lifter must then pause and extend his arms and legs to lift it above the head (jerk) with
+        a straight elbow and have to hold it there until a buzzer is sounded.<br>
+
+        A weightlifter is given three snatch attempts and three clean and jerk attempts each.<br> A weightlifter’s best
+        attempt at snatch and the clean and jerk are then added up and the one with the highest combined weight
+        lifted is declared the winner.<br>
+
+        In case two participants have lifted the same combined weight, then the one with the lower bodyweight is
+        declared the winner.<br> In the event of the bodyweight also being equal, the one with lesser attempts will be
+        the winner.<br>
+
+        A participant is allowed to increase the weight for his next attempt after a successful lift.<br> The one who
+        decides to lift the lowest weight in the first attempt is allowed to go first and he must attempt to lift
+        within one minute of his name being called out in any tournament.<br>
+
+        The barbell is made of steel and the heavy weights, covered with rubber, are added to the sides.<br>
+
+        Weightlifters are allowed to use tapes to cover parts of their body – like the wrists and thumbs – to
+        prevent injury.<br> They also often rub chalk on their hands to make it dry before a lift, which prevents the
+        barbell from slipping.<br>
+    </p>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;">
+        <a href="Registration.html"  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Enroll</a>
+    </button>
+    <button  class=" card-btn" id="card_btn" style="width:50%; margin-left:25%; height:40px;padding-left:5%;"  >
+        <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal7" href=""  id="enroll-a" style="text-decoration:none; color:black; font-size:20px;">Resources</a>
+    </button>
+    <!--    modal-->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6131;">Resources Required</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Nationality: Indian <br>
+                    State: Gujarat <br>
+                    If out of Gujarat: <br>
+                    1.  Student: At least 6 months of study in any institute in Gujarat. <br>
+                    2. Citizen: At least 3 months of work in any organization in Gujarat. <br>
+                    Age: 9 - 60. <br>
+                    Medical: Player must not have a severe medical condition. <br><br>
+                    <span style="color:#ff6131; font-size:50px; margin-left:43%;;"><b>Weight Lifting</b></span> <br>
+
+
+                    Game Type: 1v1. <br>
+                    Equipment: Knee pads, Wrist coughs, Weight Lifting Belt.
+
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

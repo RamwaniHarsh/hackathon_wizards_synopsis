@@ -1,0 +1,290 @@
+*{
+margin:0px 0px;
+box-sizing:border-box;
+}
+.navbar{
+height:50px;
+}
+#bars{
+color:white;
+font-size:30px;
+cursor:pointer;
+}
+
+#logo{
+color:white;
+margin-left:35%;
+font-family: 'Merriweather', serif;font-size:30px;
+}
+
+#search-in{
+border: 1px solid grey;
+border-radius:15px 15px;
+margin-left:25%;
+height:30px;
+width:257px;
+}
+
+#search{
+
+color:white;
+font-size:25px;
+cursor:pointer;
+margin-left:-50px;
+}
+
+#sign{
+color:white;
+font-size:25px;
+cursor:pointer;
+}
+
+#cart{
+color:white;
+font-size:25px;
+cursor:pointer;
+
+}
+
+.menu-list{
+font-size:20px;
+margin-top:40px;
+font-size:25px;
+}
+
+.menu-link:hover{
+background-color:#ff6131;;
+font-size:27px;
+}
+
+#call{
+font-size:30px;
+}
+#drop_btn{
+margin-left:500px;
+}
+#dropdownMenuLink{
+color:white;
+border:1px solid white;
+border-radius:25px 25px;
+width:100px;
+background-color:#ff6131;
+}
+#dropdownMenuLink:hover{
+background-color:white;
+transition-duration:0.4s;
+color:#ff6131;
+}
+#bars{
+color:#ff6131;
+}
+#sign{
+color:#ff6131;
+}
+#bars:hover{
+color:white;
+transition-duration:0.4s;
+}
+#sign:hover{
+color:white;
+transition-duration:0.4s;
+}
+.d-item:hover{
+color:#ff6131;
+transition-duration:0.3s;
+}
+#explore_btn{
+height:45px;
+cursor:pointer;
+width:100px;
+border-radius:50px 50px;
+margin-top:150px;
+margin-left:800px;
+box-shadow:3px 3px  5px cyan;
+background:linear-gradient(to right, #ff6131,white,green);
+font-size:20px;
+color:black;
+}
+
+#explore_btn:hover{
+background:#ff6131;
+transition-duration:0.5s;
+}
+.view_games{
+margin-top:60px;
+margin-left:1525px;
+}
+.view{
+text-decoration:none;
+font-size:20px;
+color:#ff6131;
+}
+.view:hover{
+color:blue;
+}
+
+.about{
+height:600px;
+width:100%;
+background-color:black;
+border-bottom:2px solid grey;
+border-right:2px solid grey;
+box-shadow:4px 4px 3px grey ;
+margin-top:-20px;
+}
+#logo{
+margin-top:-10px;
+margin-left:-10px;
+}
+.land_img{
+height:400px;
+width:100%;
+display:flex;
+float:left;
+background:url('carousel1_1.png');
+}
+#carousel_1{
+box-shadow: 15px 15px 5px grey;
+position:relative;
+height:400px;
+margin-left:-100px;
+}
+
+.carousel_img{
+position:absolute;
+background-color:grey;
+
+height:400px;
+width:100%;
+}
+.category-info{
+display:flex;
+float:left;
+height:500px;
+width:100%;
+border: 2px solid blue;
+align-content:space-evenly;}
+.brand-img{
+width:200px;
+height:120px;
+}
+.age-card{
+height:193px;
+position:relative;
+width:270px;
+border-radius: 18px 18px ;
+display:inline;
+float:left;
+align-content:space-between;
+
+}
+#carousel_2{
+box-shadow: 15px 15px 5px grey;
+position:relative;
+height:500px;
+margin-left:-100px;
+margin-top:-420px;
+}
+#carousel_3{
+box-shadow: 15px 15px 5px grey;
+position:relative;
+height:350px;
+margin-left:-100px;
+}
+.card-btn{
+background-color:#ff6131;
+border-radius:40px 40px;
+width:150px;
+color:black;
+margin-left:50px;
+margin-top:20px;
+border:none;
+}
+
+.card-btn:hover{
+background-color:white;
+color:#ff6131;
+border: 1px solid #ff6131;
+}
+.new-div{
+height:950px;
+width:100%;
+background:linear-gradient(to right, #ff6131,white,green);
+}
+#new{
+margin-left:10%;
+color:blue;
+padding-top:70px;
+}
+#new-card{
+width:90%;
+height:1100px;
+margin-left:80px;
+margin-top:50px;
+}
+.card-main{
+display:flex;
+float:left;
+}
+.new-div2{
+color:#ff6131;
+font-size:40px;
+margin-left:350px;
+margin-top:70px;
+}
+.new-div3{
+margin-left:300px;
+}
+.indi-register{
+height:210px;
+width:410px;
+border-radius:15px 15px;
+margin-left: 250px;
+margin-top:35px;
+box-shadow:4px 4px 5px grey;
+}
+.map{
+height:210px;
+width:310px;
+border-radius:15px 15px;
+margin-top:200px;
+box-shadow:4px 4px 5px grey;
+margin-left:70px;
+}
+.schedule{
+height:210px;
+width:400px;
+border-radius:15px 15px;
+margin-top:35px;
+box-shadow:4px 4px 5px grey;
+margin-left:70px;
+}
+.stats{
+height:210px;
+width:400px;
+border-radius:15px 15px;
+margin-top:180px;
+box-shadow:4px 4px 5px grey;
+margin-left:140px;
+
+}
+.finance{
+height:210px;
+width:400px;
+border-radius:15px 15px;
+margin-top:180px;
+box-shadow:4px 4px 5px grey;
+margin-left:140px;
+}
+.vd video{
+height:200px;
+width:100px;
+border:2px solid red;
+}
+#carousel_4{
+box-shadow: 15px 15px 5px grey;
+
+height:350px;
+margin-left:-100px;
+margin-top:100px;
+}
