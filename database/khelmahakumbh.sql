@@ -369,7 +369,7 @@ INSERT INTO `swim` (`name`, `event_name`, `score`, `region`) VALUES
 --
 
 DROP TABLE IF EXISTS `vallyball`;
-CREATE TABLE `vallyball` (
+CREATE TABLE `Vollyball` (
   `name` varchar(50) NOT NULL,
   `event_name` varchar(50) NOT NULL,
   `score` int(3) NOT NULL,
@@ -391,123 +391,6 @@ INSERT INTO `Vollyball` (`name`, `event_name`, `score`, `region`) VALUES
 ('arjun', 'Vollyball', 3, 'Ahmedabad'),
 ('avesh', 'Vollyball', 2, 'Surat'),
 ('arvind', 'Vollyball', 1, 'Gandhinagar');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `aadhar_verification`
---
-ALTER TABLE `aadhar_verification`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `admin_login`
---
-ALTER TABLE `admin_login`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `cities`
---
-ALTER TABLE `cities`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `coach_details`
---
-ALTER TABLE `coach_details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `event_registration_coach`
---
-ALTER TABLE `event_registration_coach`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `event_registration_individual`
---
-ALTER TABLE `event_registration_individual`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `institute_registration`
---
-ALTER TABLE `institute_registration`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `mapping_data`
---
-ALTER TABLE `mapping_data`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `registration_individual`
---
-ALTER TABLE `registration_individual`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `aadhar_verification`
---
-ALTER TABLE `aadhar_verification`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `admin_login`
---
-ALTER TABLE `admin_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `cities`
---
-ALTER TABLE `cities`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `coach_details`
---
-ALTER TABLE `coach_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `event_registration_coach`
---
-ALTER TABLE `event_registration_coach`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `event_registration_individual`
---
-ALTER TABLE `event_registration_individual`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `institute_registration`
---
-ALTER TABLE `institute_registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `mapping_data`
---
-ALTER TABLE `mapping_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `registration_individual`
---
-ALTER TABLE `registration_individual`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
