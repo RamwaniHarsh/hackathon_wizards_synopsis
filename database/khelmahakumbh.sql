@@ -380,7 +380,7 @@ CREATE TABLE `vallyball` (
 -- Dumping data for table `vallyball`
 --
 
-INSERT INTO `vallyball` (`name`, `event_name`, `score`, `region`) VALUES
+INSERT INTO `Vollyball` (`name`, `event_name`, `score`, `region`) VALUES
 ('jasprit', 'Vollyball', 10, 'Ahmedabad'),
 ('pranit', 'Vollyball', 9, 'Ahmedabad'),
 ('prachi', 'Vollyball', 8, 'Gandhinagar'),
