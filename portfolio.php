@@ -147,7 +147,7 @@ session_start();
 
         <div class="offcanvas-body">
             <ul class="navbar-nav menu-list">
-                <li class="nav-item"><a href="home.html" class="nav-link text-light menu-link">Home</a></li>
+                <li class="nav-item"><a href="home.php" class="nav-link text-light menu-link">Home</a></li>
                 <li class="nav-item"><a href="src/Game_details.html" class="nav-link text-light menu-link ">Games</a>
                 </li>
 
@@ -157,9 +157,6 @@ session_start();
                 </li>
                 <li class="nav-item"><a href="src/blog.html" class="nav-link text-light menu-link">Blog</a></li>
                 <li class="nav-item"><a href="src/login.html" class="nav-link text-light menu-link">Login</a></li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aperiam beatae culpa delectus dicta
-                dolorum, est exercitationem, expedita fugit harum id illum itaque maiores nemo nisi odio porro quaerat
-                ratione reprehenderit similique suscipit tempora!
             </ul>
         </div>
         <div class="offcanvas-footer">
@@ -209,7 +206,7 @@ session_start();
 
         <div class="offcanvas-body">
             <ul class="navbar-nav menu-list">
-                <li class="nav-item"><a href="home.html" class="nav-link text-light menu-link">Home</a></li>
+                <li class="nav-item"><a href="home.php" class="nav-link text-light menu-link">Home</a></li>
                 <li class="nav-item"><a href="src/Game_details.html" class="nav-link text-light menu-link ">Games</a></li>
 
                 <li class="nav-item"><a href="src/event_registration.php" class="nav-link text-light menu-link">Events</a></li>
@@ -248,12 +245,10 @@ session_start();
                             Greeks, Persians, and Romans each had their own versions, and traces of a stick game played
                             by the Indians of America have found.</p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#hockey"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#hockey" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -269,12 +264,10 @@ session_start();
                             or two opposing pairs (doubles), who take positions on opposite halves of a rectangular
                             court that is divided by a net..</p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#badminton"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#badminton" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -291,11 +284,9 @@ session_start();
                             feet are above the ground
                         </p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#running"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#running" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button> <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -312,12 +303,10 @@ session_start();
                             usually indoors. Each team tries to score by tossing the ball through the opponent'basket.
                         </p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#basketball"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#basketball" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -339,12 +328,10 @@ session_start();
                             after Kabaddi.
                         </p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#kh0-kho"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#kh0-kho" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -362,12 +349,10 @@ session_start();
                             rules.
                         </p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#volleyball"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#volleyball" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>
@@ -386,8 +371,7 @@ session_start();
                             <a href="src/Game_details.html#cycling" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
 
                     </div>
@@ -406,12 +390,10 @@ session_start();
                             carbohydrates for energy.
                         </p>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Game_details.html#weight-lifting"
-                                id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
+                            <a href="src/Game_details.html#weight-lifting" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                         </button>
                         <button class=" card-btn" id="card_btn">
-                            <a href="src/Enroll.html"
-                                id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                            <a href="src/event_registration.php" id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                         </button>
                     </div>
                 </div>

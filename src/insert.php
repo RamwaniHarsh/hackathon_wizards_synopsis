@@ -46,17 +46,17 @@ if(($row1['username'] == $uname) && ($row1['password'] == $pass)){
     $_SESSION['username'] = $uname;
     $_SESSION['email'] = $row1['email'];
     $_SESSION['name'] = $row1['f_name'];
-    header("Location: /harsh2/hackathon_synopsis/portfolio.php");
+    header("Location: ../portfolio.php");
 
 }
 if(($row2['username'] == $uname) && ($row2['password'] == $pass)){
     $_SESSION['username'] = $uname;
     $_SESSION['email'] = $row2['email'];
     $_SESSION['name'] = $row2['first_name'];
-    header("Location: /harsh2/hackathon_synopsis/portfolio.php");
+    header("Location: ../portfolio.php");
 }
 if(($row3['name'] == $uname) && ($row3['password'] == $pass)){
-    header("Location: /harsh2/hackathon_synopsis/portfolio.php");
+    header("Location: ../portfolio.php");
 }
 if(($row4['username'] == $uname) && ($row4['password'] == $pass)){
     header("Location: redirect.html?msg=admin");
