@@ -118,7 +118,7 @@
                       $password = "";
                       $dbname = "khelmahakumbh";
                       $conn = mysqli_connect($hostname,$username,$password,$dbname);
-                      $query = "select city_name from cities";
+                      $query = "select name from cities";
                       $result = mysqli_query($conn, $query);
 
                     ?>
@@ -127,7 +127,7 @@
                       <select required name="city">
                           <option disabled selected>Select City</option>
                           <?php while($row = mysqli_fetch_array($result)):; ?>
-                          <option value="<?php echo $row['city_name']; ?>"><?php echo $row['city_name']; ?></option>
+                          <option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
                           <?php endwhile; ?>
                       </select>
                   </div>

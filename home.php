@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <style>
+       
         footer {
             margin-top: 0px;
             background-color: rgb(25, 9, 2);
@@ -241,8 +245,9 @@
                         <a href="src/Game_details.html#hockey" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Hockey"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
+
                 </div>
             </div>
 
@@ -256,7 +261,7 @@
                         <a href="src/Game_details.html#badminton" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Badminton"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
@@ -271,7 +276,7 @@
                     <button  class=" card-btn" id="card_btn">
                         <a href="src/Game_details.html#running" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>                    <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Running"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
@@ -288,7 +293,7 @@
                         <a href="src/Game_details.html#basketball" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Basketball"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
@@ -309,7 +314,7 @@
                         <a href="src/Game_details.html#kho-kho" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Kho-Kho"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
@@ -318,7 +323,7 @@
             <div class="card" style="width: 18rem; height:440px; display:flex; float:left; margin-left:50px; margin-top:40px;">
                 <img class="card-img-top" src=".idea/images/volleyball.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
-                    <h5 class="card-title">volleyball</h5>
+                    <h5 class="card-title">Volleyball</h5>
                     <p class="card-text">
                         Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.
                     </p>
@@ -326,7 +331,7 @@
                         <a href="src/Game_details.html#volleyball" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Volleyball"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
@@ -342,7 +347,7 @@
                         <a href="src/Game_details.html#Cycling" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Cycling"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
 
                 </div>
@@ -352,7 +357,7 @@
             <div class="card" style="width: 18rem; height:440px; display:flex; float:left; margin-left:50px; margin-top:40px;">
                 <img class="card-img-top" src="lifting.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Weight lifting</h5>
+                    <h5 class="card-title">Weight Lifting</h5>
                     <p class="card-text">
                         Weight lifting and similar strength training activities are examples of anaerobic exercise. Anaerobic exercise involves a short burst of intense movement, while only burning carbohydrates for energy.
                     </p>
@@ -360,12 +365,12 @@
                         <a href="src/Game_details.html#weight-lifting" id="enroll-a" style="text-decoration:none; color:black;">View Details</a>
                     </button>
                     <button  class=" card-btn" id="card_btn">
-                        <a href="src/event_registration.php"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
+                        <a href="src/event_registration.php?event=Weight Lifting"  id="enroll-a" style="text-decoration:none; color:black;">Enroll</a>
                     </button>
                 </div>
             </div>
             <div class="view_games">
-                <a href="src/explore_content.html" class="view">View all</a>
+                <a href="src/Game_details.html" class="view">View all</a>
             </div>
         </div>
     </div>
@@ -391,7 +396,7 @@
                 <img class="card-img-top" src="hockey.jfif" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Hockey</h5>
-                    <button  class="card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button  class="card-btn" id="card_btn"><a href="src/Game_details.html#hockey">View Details</a></button>
                 </div>
             </div>
 
@@ -400,7 +405,7 @@
                 <img class="card-img-top" src="badminton.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Badminton</h5>
-                    <button class="card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button class="card-btn" id="card_btn"><a href="src/Game_details.html#badminton">View Details</a></button>
                 </div>
             </div>
             <!--3-->
@@ -408,7 +413,7 @@
                 <img class="card-img-top" src="Running.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Running</h5>
-                    <button  class=" card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#running">View Details</a></button>
                 </div>
             </div>
 
@@ -418,11 +423,11 @@
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Basketball</h5>
 
-                    <button  class=" card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#basketball">View Details</a></button>
                 </div>
             </div>
             <div class="view_games">
-                <a href="src/explore_content.html" class="view">View all</a>
+                <a href="src/Game_details.html" class="view">View all</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -431,7 +436,7 @@
                 <img class="card-img-top" src="kho.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Kho-Kho</h5>
-                    <button  class=" card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#kho-kho">View Details</a></button>
                 </div>
             </div>
 
@@ -440,7 +445,7 @@
                 <img class="card-img-top" src=".idea/images/volleyball.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">volleyball</h5>
-                    <button  class=" card-btn" id="card_btn"><a href="test.php">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#volleyball">View Details</a></button>
                 </div>
             </div>
             <!--3-->
@@ -448,7 +453,7 @@
                 <img class="card-img-top" src="cycle.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">cycling</h5>
-                    <button  class=" card-btn" id="card_btn">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#cycling">View Details</a></button>
                 </div>
             </div>
 
@@ -457,11 +462,11 @@
                 <img class="card-img-top" src="lifting.png" alt="Card image cap" class="brand-img" style="height:120px; width:160px; margin-left:50px; margin-top:5px;">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Weight lifting</h5>
-                    <button  class=" card-btn" id="card_btn">View Details</button>
+                    <button  class=" card-btn" id="card_btn"><a href="src/Game_details.html#weight-lifting"> View Details</a></button>
                 </div>
             </div>
             <div class="view_games">
-                <a href="src/explore_content.html" class="view">View all</a>
+                <a href="src/Game_details.html" class="view">View all</a>
             </div>
         </div>
     </div>

@@ -1,25 +1,4 @@
-style.css
-Who has access
 
-System properties
-Type
-Style Sheet
-Size
-5 KB
-Storage used
-5 KBOwned by Indus University
-Location
-registration
-Owner
-Harsh Ramwani
-Modified
-20:51 by Harsh Ramwani
-Opened
-21:31 by me
-Created
-20:54
-Add a description
-Viewers can download
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
@@ -128,10 +107,10 @@ transition-duration:0.3s;
 .container{
     position: relative;
     max-width: 900px;
-    height: 650px;
+    height: 660px;
     width: 100%;
     border-radius: 6px;
-    padding: 50px;
+    padding: 40px;
     margin: 0 15px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -160,7 +139,7 @@ transition-duration:0.3s;
     overflow: hidden;
 }
 .container form .form{
-    position: absolute;
+    position: relative;
     background-color: #fff;
     transition: 0.3s ease;
 }
@@ -252,10 +231,6 @@ form .fields .input-field{
     font-size: 14px;
     font-weight: 400;
 }
-form .error{
-
-    margin-left: 37%;
-}
 form button:hover{
     background-color: #265df2;
 }
@@ -272,20 +247,6 @@ form .buttons{
 }
 form .buttons button , .backBtn{
     margin-right: 14px;
-}
-.error
-{
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    word-spacing: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background-color: rgb(245, 58, 58);
-    color: white;
-    padding: 5px;
-    width: 20%;
-    border-radius: 5px;
 }
 .error-circle{
 
@@ -320,7 +281,7 @@ box-shadow:none;
 /* .close{
     position: absolute;
     color: black;
-    right: 450px;
+ S   right: 450px;
     top: 385px;
     width: 40px;
     height: 40px;
@@ -378,7 +339,54 @@ box-shadow:none;
   left: -35px;
   content: "&#10006;";
 }
-
+.radioex {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radioex input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.radioex:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.radioex input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radioex input:checked ~ .checkmark:after {
+    display: block;
+}
+.radioex .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
 @media (max-width: 750px) {
     .container form{
         overflow-y: scroll;

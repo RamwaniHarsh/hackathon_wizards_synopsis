@@ -1,22 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-  /* .error{
+<style>
+  .error{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: rgb(245, 58, 58);
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border-radius: 7px;
+}
+.success{
   font-size: 20px;
   text-align: center;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  background-color: rgb(245, 58, 58);
+  background-color: green;
   color: white;
-  padding: 10px;
-  width: 25%;
-  border-radius: 5px;
-} */
+  padding: 5px;
+  width: 100%;
+  border-radius: 7px;
+}
 #message {
   display: none;
-  background: #f1f1f1;
+  background: #f1f1 f1;
   color: #000;
   position: relative;
   padding: 20px;
@@ -72,17 +85,17 @@
                 <div class="fields">
                     <div class="input-field">
                         <label>First Name</label>
-                        <input type="text" name="f-name" placeholder="Enter your first name" required>
+                        <input type="text" id="f_name" name="f-name" onblur="getusername()" placeholder="Enter your first name" required>
                     </div>
 
                     <div class="input-field">
                         <label>Last Name</label>
-                        <input type="text" name="l-name" placeholder="Enter your last name" required>
+                        <input type="text" id="l_name" name="l-name" onblur="getusername()" placeholder="Enter your last name" required>
                     </div>
 
                     <div class="input-field">
                         <label>User Name</label>
-                        <input type="text" name="u-name" placeholder="Enter your Username" required>
+                        <input type="text" id="u_name" name="u-name" placeholder="Enter your Username" required>
                     </div>
 
                     <div class="input-field">
@@ -133,15 +146,15 @@
                       $password = "";
                       $dbname = "khelmahakumbh";
                       $conn = mysqli_connect($hostname,$username,$password,$dbname);
-                      $query = "select city_name from cities";
+                      $query = "select name from cities where stateId=12";
                       $result = mysqli_query($conn, $query);
                     ?>
                     <div class="input-field">
-                      <label style="font-size:1.1em">City</label>
+                      <label>City</label>
                       <select required name="city">
                           <option disabled selected>Select City</option>
                           <?php while($row = mysqli_fetch_array($result)):; ?>
-                          <option value="<?php echo $row['city_name']; ?>"><?php echo $row['city_name']; ?></option>
+                          <option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
                           <?php endwhile; ?>
                       </select>
                   </div>
@@ -154,17 +167,25 @@
                         <input type="email" name="emailid" placeholder="Enter your email id" required>
                     </div>
                     <div class="input-field">
-                        <label>Aadhar Validation</label>
-                        <input type="text" name="txtAadhar" onblur="validateAadhar()" id="txtAadhar" placeholder="Enter your Aadhaar Number" required>
-                    </div>
-                </div>
-                <div class="input-field">
+              
                         <label style="font-size: 20px;">Are you Specially Abled?</label>
-                        <input type="radio" name="ability" value="yes" required>Yes
-                        <input type="radio" name="ability" value="no" required>No
+                        <label class="radioex">Yes
+                          <input type="radio" checked="checked" value="Yes" name="ability">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radioex">No
+                          <input type="radio" checked="checked" value="No" name="ability">
+                          <span class="checkmark"></span>
+                        </label>
+                   </div>
                 </div>
             <div class="input-field">
                 <input id="submit_btn" type="submit" value="submit">
+                <?php if(isset($_GET['error'])) { ?>
+					          <div class="error">Username Already Available, Please use different Username</div>
+                <?php } elseif(isset($_GET['success'])){ ?>
+                  <div class="success">Registration Complete Successfully</div>
+                  <?php } ?>
 
             </div>
             <h4><a href="login.html">Already have an account? Click Here to Login</a></h4>
@@ -184,7 +205,7 @@ var length = document.getElementById("length");
 
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function() {
-  document.getElementById("message").style.display = "flex";
+  document.getElementById("message").style.display = "block";
 }
 
 // When the user clicks outside of the password field, hide the message box
@@ -233,35 +254,12 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-</script>
-<script> 
 
-function validateAadhar(){
-  var aadhar = document.getElementById('txtAadhar').onblur.value
-  if(aadhar == <?php echo $result['']; ?>){
-    alert("Your Aadhar Card is Verified");
-  }else{
-    alert("Your Aadhar Card is Not Verified");
-  }
+function getusername(){
+  var fname = document.getElementById("f_name").value;
+  var lname = document.getElementById("l_name").value;
+  var uname = fname + lname;
+  document.getElementById("u_name").value = uname;
 }
-<?php
-  $hostname = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "khelmahakumbh";
-  $conn = mysqli_connect($hostname,$username,$password,$dbname);
-  if ($query = "select aadharcard from aadhar_verification where aadharcard = 413894942540") {
-    $result = mysqli_query($conn, $query);  
-  }
-  if ($query = "select aadharcard from aadhar_verification where aadharcard = 413894942540") {
-    $result = mysqli_query($conn, $query);  
-  }
-  if ($query = "select aadharcard from aadhar_verification where aadharcard = 413894942540") {
-    $result = mysqli_query($conn, $query);  
-  }
-  
-  $result = mysqli_query($conn, $query);
-?>
 </script>
-
 </html>
