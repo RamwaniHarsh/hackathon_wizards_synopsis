@@ -156,7 +156,7 @@ session_start();
                 <li class="nav-item"><a href="src/Game_details.html" class="nav-link text-light menu-link">Resources</a>
                 </li>
                 <li class="nav-item"><a href="src/blog.html" class="nav-link text-light menu-link">Blog</a></li>
-                <li class="nav-item"><a href="src/login.html" class="nav-link text-light menu-link">Login</a></li>
+                <li class="nav-item"><a href="src/login.php" class="nav-link text-light menu-link">Login</a></li>
             </ul>
         </div>
         <div class="offcanvas-footer">
@@ -216,7 +216,7 @@ session_start();
                 <li class="nav-item"><a href="src/Game_details.html" class="nav-link text-light menu-link">Resources</a>
                 </li>
                 <li class="nav-item"><a href="src/blog.html" class="nav-link text-light menu-link">Blog</a></li>
-                <li class="nav-item"><a href="src/login.html" class="nav-link text-light menu-link">Login</a></li>
+                <li class="nav-item"><a href="src/login.php" class="nav-link text-light menu-link">Login</a></li>
 
             </ul>
         </div>

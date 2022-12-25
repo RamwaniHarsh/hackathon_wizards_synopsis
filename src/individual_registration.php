@@ -2,74 +2,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-  .error{
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background-color: rgb(245, 58, 58);
-    color: white;
-    padding: 5px;
-    width: 100%;
-    border-radius: 7px;
-}
-.success{
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  background-color: green;
-  color: white;
-  padding: 5px;
-  width: 100%;
-  border-radius: 7px;
-}
-#message {
-  display: none;
-  background: #f1f1 f1;
-  color: #000;
-  position: relative;
-  padding: 20px;
-  margin-top: 10px;
-}
-
-#message p {
-    padding: 10px 35px;
-    font-size: 10px;
-}
-.valid {
-    display: block;
-    color: green;
-}
-
-.valid:before {
-    display: block;
-    position: relative;
-    left: -35px;
-    content: "&#10004;";
-}
-
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "&#10006;";
-}
-</style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="register.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Regisration Form</title>
-
+  <style>
+    .error{
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        background-color: rgb(245, 58, 58);
+        color: white;
+        padding: 5px;
+        width: 100%;
+        border-radius: 7px;
+    }
+    .success{
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      background-color: green;
+      color: white;
+      padding: 5px;
+      width: 100%;
+      border-radius: 7px;
+    }
+    #message {
+      display: block;
+      background-color: #555;
+      color: #fff;
+      position: relative;
+      padding: 20px;
+      margin-top: 10px;
+    }  
+    #message p {
+      padding: 10px 35px;
+      font-size: 10px;
+    }
+    .valid {
+      display: block;
+      color: green;
+    }
+    .valid:before {
+      display: block;
+      position: relative;
+      left: -75px;
+      content: "✔️";
+    }
+    .invalid {
+      color: red;
+    }  
+    .invalid:before {
+      position: relative;
+      left: -35px;
+      content: "❌";
+    }
+    .popup {
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      height: 200px;
+      width: 300px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      top: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      right: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    .popup .hide {
+      visibility: hidden;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Regisration Form</title>
 </head>
 <body>
 <!-- <header> -->
@@ -100,16 +150,20 @@
 
                     <div class="input-field">
                         <label>Password</label>
-                        <input type="password" id="psw" name="u-pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password" required>
-
+                        <div class="popup">
+                          <input style="width: 260px;" type="password" class="popup" id="psw" onblur="myFunctionBlur()" onfocus="myFunction()" name="u-pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password" required>
+                            <span class="popuptext" id="myPopup">
+                              <div id="message">
+                                <p>Password must contain the following: </p>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                              </div>
+                            </span>
+                        </div>
                     </div>
-                    <div class="pavalidate" id="message">
-                        <h3>Password must contain the following: </h3>
-                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                        <p id="number" class="invalid">A <b>number</b></p>
-                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                    </div>
+                    
                     <div class="input-field">
                       <label>Date of Birth</label>
                       <input type="date" name="dateofbirth" placeholder="Enter birth date" required>
@@ -178,6 +232,7 @@
                           <span class="checkmark"></span>
                         </label>
                    </div>
+
                 </div>
             <div class="input-field">
                 <input id="submit_btn" type="submit" value="submit">
@@ -188,7 +243,7 @@
                   <?php } ?>
 
             </div>
-            <h4><a href="login.html">Already have an account? Click Here to Login</a></h4>
+            <h4><a href="login.php">Already have an account? Click Here to Login</a></h4>
         </div>
     </form>
 
@@ -197,6 +252,14 @@
 </body>
 <script src="../js/script1.js"></script>
 <script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunctionBlur(){
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("hide");
+}
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -204,14 +267,14 @@ var number = document.getElementById("number");
 var length = document.getElementById("length");
 
 // When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
+// myInput.onfocus = function() {
+//   document.getElementById("message").style.display = "block";
+// }
 
 // When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
+// myInput.onblur = function() {
+//   document.getElementById("message").style.display = "none";
+// }
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
@@ -261,5 +324,9 @@ function getusername(){
   var uname = fname + lname;
   document.getElementById("u_name").value = uname;
 }
+// function popup(){
+//   document.getElementById("message").style.display = "block";
+// }
+
 </script>
 </html>

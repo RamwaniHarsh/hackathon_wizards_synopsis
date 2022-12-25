@@ -6,7 +6,23 @@
 <html lang="en">
 <head>
     <style>
-        .error{
+        #submit_btn{
+            height:40px;
+            width:100%;
+            background:#ff6131;
+            border-radius: 35px 35px;
+            box-shadow: 2px 2px 3px blue;
+            font-size:18px;
+            cursor:pointer;
+            }
+                #submit_btn:hover{
+            background-color:white;
+            border: 1px  solid #ff6131;
+            color:#ff6131;
+            font-size:18px;
+            transition-duration:0.5s;
+        }
+        .error ,.password{
             font-size: 20px;
             text-align: center;
             text-decoration: none;
@@ -85,7 +101,7 @@
             <li class="nav-item"><a href="Registration.html" class="nav-link text-light menu-link">Registration</a></li>
             <li class="nav-item"><a href="Game_details.html" class="nav-link text-light menu-link">Resources</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link text-light menu-link">Blog</a></li>
-            <li class="nav-item"><a href="login.html" class="nav-link text-light menu-link">Login</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link text-light menu-link">Login</a></li>
 
         </ul>
     </div>
@@ -116,30 +132,14 @@
 					          <div class="error">Username Already Available, Please use different Username</div>
                 <?php } elseif(isset($_GET['success'])){ ?>
                   <div class="success">Registration Complete Successfully</div>
-                  <?php } ?>
+                  <?php } elseif(isset($_GET['password'])){ ?>
+                  <div class="password">Username or Password is Incorrect</div>
+                  <?php }?>
                 <a href="individual_registration.php">Don't have an account? <span>Register</span></a>
             </div>
             <button type="submit" id="submit_btn" class="btn mb-3 text-center">Submit</button>
         </div>
     </form>
 </div>
-<style>
-#submit_btn{
-height:40px;
-width:100%;
-background:#ff6131;
-border-radius: 35px 35px;
-box-shadow: 2px 2px 3px blue;
-font-size:18px;
-cursor:pointer;
-}
-    #submit_btn:hover{
-background-color:white;
-border: 1px  solid #ff6131;
-color:#ff6131;
-font-size:18px;
-transition-duration:0.5s;
-}
-</style>
 </body>
 </html>

@@ -37,8 +37,8 @@
                         $mail->isSMTP();                                            //Send using SMTP
                         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                        $mail->Username   = 'harshramwani5@gmail.com';                     //SMTP username
-                        $mail->Password   = 'douorgepmgebphbf';                               //SMTP password
+                        $mail->Username   = 'teamkmk.wizards@gmail.com';
+                        $mail->Password   = 'cdquovtdqgoydlny';
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                     
@@ -51,7 +51,7 @@
                         $mail->Subject = 'Email Verification from Khelmahakumbh';
                         $mail->Body    = " Thanks for Registration 
                         Click the link below to verify the Email 
-                        <a href='https://harshramwani.com/dashboard/harsh/hackathon_wizards_synopsis-main/src/verify.php?email=$email&v_code=$v_code'>Verify</a>";
+                        <a href='https://harshramwani.com/dashboard/harsh/hackathon_wizards_synopsis-main/src/verify_individual.php?email=$email&v_code=$v_code'>Verify</a>";
                     
                         $mail->send();
                         return true;

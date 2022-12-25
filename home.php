@@ -89,7 +89,7 @@
                 <li><a class="dropdown-item" href="src/individual_registration.php"><span class="d-item"> Individual Registration </span></a></li>
             </ul>
         </div>
-            <a href="src/login.html" class="btn">
+            <a href="src/login.php" class="btn">
                 <i class="bi bi-box-arrow-in-left" id="sign">
                 </i>
             </a>
@@ -218,7 +218,7 @@
             <li class="nav-item"><a href="src/Game_details.html" class="nav-link text-light menu-link">Resources</a></li>
             
             <li class="nav-item"><a href="src/blog.html" class="nav-link text-light menu-link">Blog</a></li>
-            <li class="nav-item"><a href="src/login.html" class="nav-link text-light menu-link">Login</a></li>
+            <li class="nav-item"><a href="src/login.php" class="nav-link text-light menu-link">Login</a></li>
 
         </ul>
     </div>

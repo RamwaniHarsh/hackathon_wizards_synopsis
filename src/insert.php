@@ -62,7 +62,8 @@ if(($row4['username'] == $uname) && ($row4['password'] == $pass)){
     header("Location: redirect.html?msg=admin");
 }
 else{
-    echo "Error: ".mysqli_error($conn);
-    // header("Location: login.html?msg=Error". $sql ." Error " .mysqli_error($conn));
+    // header("Location: login.php?error=unameorpassw");
+    // echo "Error: ".mysqli_error($conn);
+    header("Location: login.php?password=dosenotmatched");
 }
 ?>
